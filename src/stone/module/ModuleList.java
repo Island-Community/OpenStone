@@ -1,0 +1,187 @@
+package stone.module;
+
+import stone.module.client.ClickGuiModule;
+import stone.module.render.Interface;
+import stone.module.client.RadarModule;
+import stone.module.combat.AimAssist;
+import stone.module.combat.AttributeSwap;
+import stone.module.combat.AutoAim;
+import stone.module.combat.AutoBlock;
+import stone.module.combat.AutoClicker;
+import stone.module.combat.AutoFeed;
+import stone.module.combat.Backtrack;
+import stone.module.combat.Displace;
+import stone.module.combat.Fisherman;
+import stone.module.combat.HitSelect;
+import stone.module.combat.JumpReset;
+import stone.module.combat.KeepSprint;
+import stone.module.combat.LagRange;
+import stone.module.combat.Piercing;
+import stone.module.combat.Reduce;
+import stone.module.combat.TriggerBot;
+import stone.module.combat.Velocity;
+import stone.module.combat.WTap;
+import stone.module.minigames.ArmedAimbot;
+import stone.module.minigames.AutoChest;
+import stone.module.minigames.AutoWho;
+import stone.module.minigames.BedDefender;
+import stone.module.minigames.BedwarsUtils;
+import stone.module.minigames.Deposit;
+import stone.module.minigames.MurderMystery;
+import stone.module.minigames.NukeDefend;
+import stone.module.minigames.Opsec;
+import stone.module.minigames.PartyDodger;
+import stone.module.minigames.Quickbuy;
+import stone.module.minigames.SkywarsUtils;
+import stone.module.movement.InvMove;
+import stone.module.movement.NoSlow;
+import stone.module.movement.NullMove;
+import stone.module.movement.Sprint;
+import stone.module.movement.Stasis;
+import stone.module.movement.Timer;
+import stone.module.other.AntiBot;
+import stone.module.other.Anticheat;
+import stone.module.other.LagDetect;
+import stone.module.other.NickBot;
+import stone.module.player.AutoDeflect;
+import stone.module.player.AutoSwap;
+import stone.module.player.AutoTool;
+import stone.module.player.BedNuker;
+import stone.module.player.Blink;
+import stone.module.player.BlockIn;
+import stone.module.player.BridgeAssist;
+import stone.module.player.BridgeNuker;
+import stone.module.player.Buffer;
+import stone.module.player.Clutch;
+import stone.module.player.DelayRemover;
+import stone.module.player.FakeLag;
+import stone.module.player.FastMine;
+import stone.module.player.FastPlace;
+import stone.module.player.FireballBoost;
+import stone.module.player.FireballPearl;
+import stone.module.player.Freecam;
+import stone.module.player.GhostHand;
+import stone.module.player.HeadHitter;
+import stone.module.player.HideWindow;
+import stone.module.player.InventoryManager;
+import stone.module.player.MLG;
+import stone.module.player.Scaffold;
+import stone.module.player.Stealer;
+import stone.module.render.AntiDebuff;
+import stone.module.render.AntiInvis;
+import stone.module.render.BedPlates;
+import stone.module.render.BlockESP;
+import stone.module.render.Cape;
+import stone.module.render.Chams;
+import stone.module.render.CuteVisuals;
+import stone.module.render.Esp;
+import stone.module.render.FreeLook;
+import stone.module.render.Indicators;
+import stone.module.render.ItemESP;
+import stone.module.render.Nametags;
+import stone.module.render.NoCameraClip;
+import stone.module.render.Pointers;
+import stone.module.render.TargetESP;
+import stone.module.render.TargetHud;
+import stone.module.render.Tracers;
+import stone.module.render.Trajectories;
+import java.util.List;
+
+final class ModuleList {
+    private ModuleList() {}
+
+    static List<Module> create() {
+        return List.of(
+                new AimAssist(),
+                new AttributeSwap(),
+                new AutoAim(),
+                new AutoBlock(),
+                new AutoClicker(),
+                new AutoFeed(),
+                new Backtrack(),
+                new Displace(),
+                new Fisherman(),
+                new HitSelect(),
+                new JumpReset(),
+                new KeepSprint(),
+                new LagRange(),
+                new Piercing(),
+                new Reduce(),
+                new TriggerBot(),
+                new Velocity(),
+                new WTap(),
+
+                new InvMove(),
+                new NoSlow(),
+                new NullMove(),
+                new Sprint(),
+                new Stasis(),
+                new Timer(),
+
+                new AutoDeflect(),
+                new AutoSwap(),
+                new AutoTool(),
+                new BedNuker(),
+                new Blink(),
+                new BlockIn(),
+                new BridgeAssist(),
+                new BridgeNuker(),
+                new Buffer(),
+                new Clutch(),
+                new DelayRemover(),
+                new FakeLag(),
+                new FastMine(),
+                new FastPlace(),
+                new FireballBoost(),
+                new FireballPearl(),
+                new Freecam(),
+                new GhostHand(),
+                new HeadHitter(),
+                new HideWindow(),
+                new InventoryManager(),
+                new MLG(),
+                new Scaffold(),
+                new Stealer(),
+
+                new AntiDebuff(),
+                new AntiInvis(),
+                new BedPlates(),
+                new BlockESP(),
+                new Cape(),
+                new Chams(),
+                new CuteVisuals(),
+                new Esp(),
+                new FreeLook(),
+                new Indicators(),
+                new ItemESP(),
+                new Nametags(),
+                new NoCameraClip(),
+                new Pointers(),
+                new TargetESP(),
+                new TargetHud(),
+                new Tracers(),
+                new Trajectories(),
+
+                new ArmedAimbot(),
+                new AutoChest(),
+                new AutoWho(),
+                new BedDefender(),
+                new BedwarsUtils(),
+                new Deposit(),
+                new MurderMystery(),
+                new NukeDefend(),
+                new Opsec(),
+                new PartyDodger(),
+                new Quickbuy(),
+                new SkywarsUtils(),
+
+                new AntiBot(),
+                new Anticheat(),
+                new LagDetect(),
+                new NickBot(),
+
+                new ClickGuiModule(),
+                new Interface(),
+                new RadarModule());
+    }
+}

@@ -1,0 +1,17 @@
+#pragma once
+
+namespace cold::injector::embedded {
+
+struct EmbeddedScript {
+    int id;
+    const char* name;
+};
+
+inline constexpr EmbeddedScript kEmbeddedScripts[] = {
+@COLD_SCRIPT_TABLE@};
+
+inline constexpr int kEmbeddedScriptCount =
+    static_cast<int>(sizeof(kEmbeddedScripts) / sizeof(kEmbeddedScripts[0]));
+inline constexpr int kPayloadResourceId = 5001;
+
+}

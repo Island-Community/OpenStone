@@ -1,0 +1,12 @@
+build/
+dist/
+infra/lib/
+Rise-6.9.5/
+.freebuff/
+usefulinfo/
+legacy/
+.idea/
+.vs/
+*.log
+*.cfg
+*.old
