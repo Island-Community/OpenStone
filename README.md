@@ -1,7 +1,7 @@
 <p align="center">
   <img src="ssets/ss.png" alt="Open Stone Banner" width="350" />
   <br>
-  <font size="6"><b>Open Slinky</b></font>
+  <font size="6"><b>Open Stone</b></font>
   <br>
   <font size="3">by Skid Solutions</font>
 </p>
