@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/ssets.png" alt="Open Stone Banner" width="350" />
+  <img src="ssets/ss.png" alt="Open Stone Banner" width="350" />
   <br>
   <font size="6"><b>Open Slinky</b></font>
   <br>
